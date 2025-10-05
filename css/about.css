@@ -1,4 +1,4 @@
-/* General Reset */
+/* About Page Specific Styles */
 * {
   margin: 0;
   padding: 0;
@@ -87,11 +87,6 @@ body {
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-3px);
-}
-
-.learn-more-btn {
-  margin-top: 15px;
-  width: 100%;
 }
 
 /* Navbar */
@@ -184,51 +179,28 @@ body {
   border-radius: 2px;
 }
 
-/* Hero Section */
-.hero {
-  height: 100vh;
-  background: url("../img/cover.png") no-repeat center center/cover;
+/* About Hero Section */
+.about-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(11, 27, 42, 0.7), rgba(11, 27, 42, 0.7)), url("../img/about-hero.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
+  text-align: center;
   margin-top: 70px;
+  scroll-margin-top: 70px;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(11, 27, 42, 0.6);
-  z-index: 1;
-}
-
-.hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 50px;
-  z-index: 2;
-  position: relative;
-}
-
-.hero-content h1 {
+.about-hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.about-hero-content p {
+  font-size: 1.3rem;
   max-width: 600px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 /* Wave Divider */
@@ -239,104 +211,96 @@ body {
   margin-bottom: -5px;
 }
 
-/* Intro Section */
-.intro {
-  padding: 80px 20px;
-  text-align: center;
+/* About Intro Section */
+.about-intro {
+  padding: 80px 0;
   background: var(--medium-bg);
+  scroll-margin-top: 70px;
 }
 
-.intro h2 {
-  font-size: 2em;
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
   margin-bottom: 20px;
   color: var(--secondary-color);
-  letter-spacing: 2px;
 }
 
-.intro p {
-  max-width: 800px;
-  margin: auto;
-  font-size: 1.05em;
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-gray);
 }
 
-/* Featured Shrimps */
-.featured {
-  padding: 100px 0;
-  background: var(--light-bg);
-}
-
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.product-card {
-  background: var(--card-bg);
+.about-image {
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  flex-direction: column;
-}
-
-.product-card:hover {
-  transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-.product-image {
-  height: 200px;
-  overflow: hidden;
-}
-
-.product-image img {
+.about-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
   transition: transform 0.5s ease;
 }
 
-.product-card:hover .product-image img {
-  transform: scale(1.1);
+.about-image:hover img {
+  transform: scale(1.05);
 }
 
-.product-info {
-  padding: 20px;
-  text-align: center;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* Our Story Section */
+.our-story {
+  padding: 100px 0;
+  background: var(--light-bg);
+  scroll-margin-top: 70px;
 }
 
-.product-info h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: var(--secondary-color);
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
 }
 
-.product-info p {
+.story-image {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: var(--text-gray);
-  font-size: 0.9rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-/* Services Section */
-.services {
+/* Mission & Vision Section */
+.mission-vision {
   padding: 100px 0;
   background: var(--medium-bg);
+  scroll-margin-top: 70px;
 }
 
-.services-grid {
+.mv-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
 }
 
-.service-card {
+.mv-card {
   background: var(--card-bg);
   padding: 40px 30px;
   border-radius: 10px;
@@ -346,55 +310,67 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.service-card:hover {
+.mv-card:hover {
   transform: translateY(-10px);
 }
 
-.service-card i {
+.mv-card i {
   font-size: 3rem;
   color: var(--primary-color);
   margin-bottom: 20px;
 }
 
-.service-card h3 {
+.mv-card h3 {
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: var(--secondary-color);
 }
 
-.service-card p {
+.mv-card p {
   color: var(--text-gray);
-  font-size: 1rem;
   line-height: 1.7;
 }
 
-/* FAQ Section */
-.faq {
+/* Why Choose Us Section */
+.why-choose-us {
   padding: 100px 0;
   background: var(--light-bg);
+  scroll-margin-top: 70px;
 }
 
-.faq-grid {
+.values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
 }
 
-.faq-item {
+.value-item {
   background: var(--card-bg);
   padding: 25px;
   border-radius: 10px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.faq-item h3 {
+.value-item:hover {
+  transform: translateY(-5px);
+}
+
+.value-item h3 {
   font-size: 1.2rem;
   margin-bottom: 15px;
   color: var(--secondary-color);
+  display: flex;
+  align-items: center;
 }
 
-.faq-item p {
+.value-item h3 i {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.value-item p {
   color: var(--text-gray);
   line-height: 1.7;
 }
@@ -403,6 +379,7 @@ body {
 footer {
   background: var(--dark-bg);
   padding-top: 70px;
+  scroll-margin-top: 70px;
 }
 
 .footer-content {
@@ -574,7 +551,7 @@ footer {
 
 /* Large Devices (1200px and below) */
 @media screen and (max-width: 1200px) {
-  .hero-content h1 {
+  .about-hero-content h1 {
     font-size: 3rem;
   }
 }
@@ -585,11 +562,11 @@ footer {
     padding: 15px 30px;
   }
   
-  .hero-content {
+  .about-hero-content {
     padding: 0 30px;
   }
   
-  .hero-content h1 {
+  .about-hero-content h1 {
     font-size: 2.5rem;
   }
   
@@ -597,8 +574,14 @@ footer {
     font-size: 1.8rem;
   }
   
-  .services-grid {
+  .mv-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .about-content,
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 
@@ -658,22 +641,12 @@ footer {
     transform: rotate(-45deg) translate(7px, -6px);
   }
   
-  .hero-content h1 {
+  .about-hero-content h1 {
     font-size: 2.2rem;
   }
   
-  .hero-content p {
+  .about-hero-content p {
     font-size: 1rem;
-  }
-  
-  .hero-buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .btn {
-    width: 100%;
-    text-align: center;
   }
   
   .footer-content {
@@ -681,12 +654,8 @@ footer {
     gap: 40px;
   }
   
-  .faq-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .products-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  .about-hero {
+    height: 50vh;
   }
 }
 
@@ -700,7 +669,7 @@ footer {
     font-size: 1.1rem;
   }
   
-  .hero-content h1 {
+  .about-hero-content h1 {
     font-size: 1.8rem;
   }
   
@@ -708,15 +677,15 @@ footer {
     font-size: 1.6rem;
   }
   
-  .intro h2 {
+  .about-text h2 {
     font-size: 1.6rem;
   }
   
-  .products-grid {
+  .values-grid {
     grid-template-columns: 1fr;
   }
   
-  .hero-content {
+  .about-hero-content {
     padding: 0 15px;
   }
   
@@ -724,9 +693,10 @@ footer {
     padding: 0 15px;
   }
   
-  .featured,
-  .services,
-  .faq {
+  .about-intro,
+  .our-story,
+  .mission-vision,
+  .why-choose-us {
     padding: 60px 0;
   }
   
@@ -749,7 +719,7 @@ footer {
   }
 }
 
-/* Animation for product cards */
+/* Animation for elements */
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/review.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <title>Atlantia Aquatics | Reviews</title>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Atlantia Aquatics Logo">
+        <span>ATLANTIA AQUATICS</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="review.html" class="active">REVIEWS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="reviews-hero" id="reviews-hero">
+    <div class="reviews-hero-content">
+      <h1>Customer Reviews</h1>
+      <p>Real experiences from our shrimp-loving community</p>
+    </div>
+  </section>
+
+  <!-- Wave Divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#1a2a3a" d="M0,64L48,74.7C96,85,192,107,288,122.7C384,139,480,149,576,133.3C672,117,768,75,864,74.7C960,75,1056,117,1152,133.3C1248,149,1344,139,1392,133.3L1440,128V160H0Z"></path>
+    </svg>
+  </div>
+
+  <!-- Customer Content Section -->
+  <section class="customer-content-section" id="customer-content">
+    <div class="container">
+      <h2 class="section-title">From Our Customers</h2>
+      <p class="section-subtitle">Real conversations, parcel photos, and happy shrimp moments</p>
+      
+      <div class="content-filters">
+        <button class="filter-btn active" data-filter="all">All Content</button>
+        <button class="filter-btn" data-filter="reviews">Reviews</button>
+        <button class="filter-btn" data-filter="parcels">Parcel Photos</button>
+        <button class="filter-btn" data-filter="shrimp">Happy Shrimp</button>
+      </div>
+
+      <div class="customer-content-grid">
+        <!-- Review 1 - Conversation -->
+        <div class="content-item" data-type="reviews">
+          <div class="content-header">
+            <div class="content-type-badge">
+              <i class="fas fa-comment"></i>
+              Review
+            </div>
+            <div class="content-date">August 13, 2024</div>
+          </div>
+          <div class="content-image">
+            <img src="../img/review1.jpg" alt="Customer review screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-fallback">
+              <i class="fas fa-comments"></i>
+              <span>Customer Conversation</span>
+              <p>"The shrimp arrived perfectly healthy!"</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 - Parcel -->
+        <div class="content-item" data-type="parcels">
+          <div class="content-header">
+            <div class="content-type-badge">
+              <i class="fas fa-box"></i>
+              Parcel Photo
+            </div>
+            <div class="content-date">July 23, 2024</div>
+          </div>
+          <div class="content-image">
+            <img src="../img/parcel2.jpg" alt="Parcel delivery photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-fallback">
+              <i class="fas fa-box-open"></i>
+              <span>Secure Packaging</span>
+              <p>Ready for safe delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 - Shrimp Photo -->
+        <div class="content-item" data-type="shrimp">
+          <div class="content-header">
+            <div class="content-type-badge">
+              <i class="fas fa-shrimp"></i>
+              Shrimp Photo
+            </div>
+            <div class="content-date">May 9, 2022</div>
+          </div>
+          <div class="content-image">
+            <img src="../img/happy1.jpg" alt="Customer's shrimp tank" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-fallback">
+              <i class="fas fa-camera"></i>
+              <span>Happy Shrimp</span>
+              <p>Thriving in their new home</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 - Conversation -->
+        <div class="content-item" data-type="reviews">
+          <div class="content-header">
+            <div class="content-type-badge">
+              <i class="fas fa-comment"></i>
+              Review
+            </div>
+            <div class="content-date">August 20, 2024</div>
+          </div>
+          <div class="content-image">
+            <img src="../img/review2.jpg" alt="Facebook review screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-fallback">
+              <i class="fas fa-star"></i>
+              <span>5-Star Rating</span>
+              <p>"Amazing quality and service!"</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5 - Parcel -->
+        <div class="content-item" data-type="parcels">
+          <div class="content-header">
+            <div class="content-type-badge">
+              <i class="fas fa-box"></i>
+              Parcel Photo
+            </div>
+            <div class="content-date">June 30, 2024</div>
+          </div>
+          <div class="content-image">
+            <img src="../img/parcel1.jpg" alt="Shipping preparation" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-fallback">
+              <i class="fas fa-shipping-fast"></i>
+              <span>Shipping Preparation</span>
+              <p>Carefully packed for transport</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6 - Shrimp Photo -->
+        <div class="content-item" data-type="shrimp">
+          <div class="content-header">
+            <div class="content-type-badge">
+              <i class="fas fa-shrimp"></i>
+              Shrimp Photo
+            </div>
+            <div class="content-date">July 26, 2022</div>
+          </div>
+          <div class="content-image">
+            <img src="../img/happy2.jpg" alt="Breeding success" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-fallback">
+              <i class="fas fa-award"></i>
+              <span>Breeding Success</span>
+              <p>Customer's growing colony</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="../img/logo.png" alt="Atlantia Aquatics Logo">
+          <span>ATLANTIA AQUATICS</span>
+        </div>
+        <p>Your trusted source for premium Neocaridina shrimps in the Philippines since 2022. We're passionate about bringing the beauty of aquatic life to your home.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/AtlantiaAquatics" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/atlantia_aquatics?igsh=OWtoeTQ0bXlpYTE0" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="review.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> Purok 2, Pansol, Pila, Laguna</li>
+          <li><i class="fas fa-phone"></i> 0915-260-6009</li>
+          <li><i class="fas fa-envelope"></i> info@atlantiaaquatics.com</li>
+          <li><i class="fas fa-clock"></i> Mon-Sat: 9AM-6PM, Sun: 10AM-4PM</li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Facebook Page</h3>
+        <div class="facebook-placeholder">
+          <div class="fb-header">
+            <img src="../img/logo.png" alt="Atlantia Aquatics Facebook" class="fb-avatar">
+            <div class="fb-info">
+              <div class="fb-name">Atlantia Aquatics</div>
+              <div class="fb-followers">15.2K followers</div>
+            </div>
+          </div>
+          <div class="fb-content">
+            <p>Follow us for shrimp care tips, new arrivals, and exclusive promotions!</p>
+            <a href="https://www.facebook.com/AtlantiaAquatics" target="_blank" class="fb-like-btn">Visit Page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 ATLANTIA AQUATICS. All rights reserved. | Premium Neocaridina Shrimps Philippines</p>
+    </div>
+  </footer>
+
+  <script src="../js/review.js"></script>
+</body>
+</html>
